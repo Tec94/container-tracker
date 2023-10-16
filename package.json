@@ -1,0 +1,15 @@
+{
+  "name": "container-tracker",
+  "version": "1.0.0",
+  "description": "This is a simple container tracker that will keep track of the containers in a storage unit. You could check in and check out containers and see what containers are in the storage unit through container IDs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
