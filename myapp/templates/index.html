@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Tracker</title>
+    <link rel="stylesheet" href="../static/src/base.css">
+    <script src="../static/script.ts"></script>
+</head>
+<body >
+    <div class="container">
+        <div class="header">
+            <h1>Container Tracker</h1>
+        </div>
+        <div class="content">
+            <div class="form">
+                <form action="/container-tracker/myapp/track" method="post">
+                    <label for="container">Container Number</label>
+                    <input type="text" name="container" id="container" required>
+                    <input type="submit" value="Track">
+                </form>
+            </div>
+            <div class="result">
+                <h2>Result</h2>
+                <div class="result-content">
+                    <p>Container Status: <span id="container-status"></span></p>
+                    <p>Container Location: <span id="container-location"></span></p>
+                    <p>Container ETA: <span id="container-eta"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

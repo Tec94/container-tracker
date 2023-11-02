@@ -1,11 +1,14 @@
 from django.shortcuts import render
+from .models import Warehouse
+from datetime import date
+import random
 
-# Create your views here.
-def home(request):
-    return render(request, 'home.html', {})
+def generate_random_id():
+    return f"CONT{random.randint(1, 20)}"
 
-def contact(request):
-    return render(request, 'contact.html', {})
-
-def about(request):
-    return render(request, 'about.html', {})
+def index(request):
+    container_id = generate_random_id()
+    container_status = 'IN'
+    container_location = random.choice([location[0] for location in Warehouse.CONTAINER_LOCATION])
+    container_eta = date.today()
+    return render(request, 'index.html', {})
