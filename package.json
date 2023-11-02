@@ -4,7 +4,7 @@
   "description": "This is a simple container tracker that will keep track of the containers in a storage unit. You could check in and check out containers and see what containers are in the storage unit through container IDs.",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./myapp/static/input.css -o ./myapp/static/base.css --watch"
+    "build": "tailwindcss build -i ./myapp/static/src/input.css -o ./myapp/static/src/base.css --watch"
   },
   "keywords": [],
   "author": "",
